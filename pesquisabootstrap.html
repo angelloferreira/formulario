@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Opinião</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="padding: 80px;" >
+            <h1>Pesquisa de Opinião</h1>
+            <br>
+            <form action="#">
+                <p>Nessa pesquisa você será questionado sobre o produto X. Esse produto é vendido em todo o país nas
+                    perfumarias, lojas de departamento, internet entre outros. Responda as questões abaixo de acordo com sua
+                    opinião.</p>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite o seu nome">
+                    <br>
+                    <input type="text" class="form-control" name="idade" id="idade" placeholder="Digite a sua idade">
+                    <br>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Digite o seu email">
+                    <br>
+                    <label for="data">Data de nascimento</label>
+                    <br>
+                    <input type="date" name="data" id="data" class="form-control">
+                    <br>
+                    <label for="senha">Digite uma senha para acessar os dados da pesquisa porteriormente:</label>
+                    <br>
+                    <input type="password" name="senha" id="senha" placeholder="Digite uma senha" class="form-control">
+                </fieldset>
+                <fieldset>
+                    <br>
+                    <legend>Aspecto do produto</legend>
+                    <label for="cor">Selecione a cor do produto após 6 meses de uso:</label>
+                    <br>
+                    <input type="color" name="cor" id="cor" class="form-control form-control-color">
+                    <br><br>
+                    <label for="produto">Adicione uma foto do seu produto:</label>
+                    <br>
+                    <input type="file" name="produto" class="form-control">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Opinião quanto a utilização</legend>
+                    <p>Você gosta do cheiro do produto?</p>
+                    <input type="radio" name="ofato" id="gosto-muito" class="form-check-input">
+                    <label for="ofato">Gosto Muito</label>
+                    <br>
+                    <input type="radio" name="ofato" id="gosto" class="form-check-input">
+                    <label for="ofato">Gosto</label>
+                    <br>
+                    <input type="radio" name="ofato" id="naosei" class="form-check-input">
+                    <label for="ofato">Não Sei</label>
+                    <br>
+                    <input type="radio" name="ofato" id="naogosto" class="form-check-input">
+                    <label for="ofato">Não Gosto</label>
+                    <br>
+                    <input type="radio" name="ofato" id="odeio" class="form-check-input">
+                    <label for="ofato">Odeio</label>
+                    <br>
+                    <br>
+                    <p>Marque as características do produto que você mais gosta:</p>
+                    <input type="checkbox" name="fixacao" id="fixacao" class="form-check-input">
+                    <label for="fixacao">Fixação</label>
+                    <br>
+                    <input type="checkbox" name="textura" id="textura" class="form-check-input">
+                    <label for="textura">Textura</label>
+                    <br>
+                    <input type="checkbox" name="cheiro" id="cheiro" class="form-check-input">
+                    <label for="cheiro">Cheiro</label>
+                    <br>
+                    <input type="checkbox" name="coloracao" id="coloracao" class="form-check-input">
+                    <label for="coloracao">Coloração</label>
+                    <br>
+                    <input type="checkbox" name="embalagem" id="embalagem" class="form-check-input">
+                    <label for="embalagem">Embalagem</label>
+                    <br>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Nível de satisfação</legend>
+                    <p>Coloque na escala o seu nível de satisfação geral do produto:</p>
+                    <input type="range" name="satisfacao" id="satisfacao" class="form-range">
+                </fieldset>
+                <fieldset>
+                    <legend>Opiniões</legend>
+                    <p>Digite abaixo sua opnião geral para esse produto:</p>
+                    <textarea name="opiniao-text" id="opiniao-text" cols="85" rows="10" class="form-control"></textarea>
+                </fieldset>
+                <br>
+                <input class="btn btn-primary" type="submit" value="Gravar respostas">
+                <br><br>
+            </form>
+        </div>
+
+
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
